@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
 </head>
 <body>
+    <div class="top1" id="top1">
+        <div class="canvasBigger">
+        <canvas id="myCanvas"> </canvas>
+    </div>
+        <button class="btn btn-info btn-lg" onclick="closeTop1()">勇敢向前</button>
+      </div>
+      <div class="top2" id="top2">
+        <button class="btn btn-info btn-lg" onclick="closeTop2()">top2</button>
+      </div>
+
+      <div class="top5" id="top5">  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">網站名稱</a>
@@ -36,11 +47,8 @@
         </div>
     </nav>
 
-    <div class="container mt-4">
-        <h1>歡迎來到我的網站</h1>
-        <p>這是一個使用Bootstrap創建的簡單網站。</p>
-
-        
+ 
+     
 <div class="container">
     <div class="block1 mb-2">
       <div class="block2"></div>
@@ -260,7 +268,8 @@
       </div>
     </div>
   </div>
-    </div>
+    
+</div>
     
 </body>
 
@@ -269,6 +278,26 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 <script>
+// test
+
+const top1 = document.getElementById("top1")
+const top2 = document.getElementById("top2")
+const top5 = document.getElementById("top5")
+const closeTop1 = () => {
+  console.log("closeTop1 starts")
+
+  top1.style.display = "none"
+  top2.style.display = "block"
+}
+
+const closeTop2 = () => {
+  top2.style.display = "none"
+  top5.style.display = "block"
+}
+
+//skrollr
+
+
     let s = skrollr.init()
 
 //animateCircle
@@ -309,7 +338,7 @@ function draw() {
     ctx.lineTo(400, pos);
     ctx.fillText(pos, 10, pos);
   }
-  ctx.strokeStyle = "rgba(0,0,0,0.1)";
+  ctx.strokeStyle = "rgba(0,0,0,0)";
   ctx.stroke();
 
   ctx.beginPath();
