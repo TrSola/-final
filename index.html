@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的Bootstrap網站</title>
+    <title>生命科學研究中心</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -31,22 +31,19 @@
       </div>
 
       <div class="top5" id="top5">  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary mb-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">網站名稱</a>
+            <a class="navbar-brand" href="#">研究中心</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse  justify-content-end pe-2" id="navbarNav">
+            <div class="collapse navbar-collapse  justify-content-end pe-5" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">關於我們</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">服務</a>
+                        <a class="nav-link" href="#">產品介紹</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">聯絡我們</a>
@@ -62,7 +59,7 @@
 <div class="container">
     <!-- block -->
     
-<div class="d-flex mb-2">
+<div class="d-flex">
   <div class="block1">
     <div class="pic1_block1"></div>
     <div class="pic1_block2"></div>
@@ -82,6 +79,7 @@
       <div class="pic2_block4_2"></div>
     </div>
   </div>
+  <h2 class="m-auto topH2">滑一滑，點一點，看看不一樣的生命現象</h2>
 </div>
 
     <!-- cross-->
@@ -101,7 +99,7 @@
     </canvas>
       <!--eatCake-->
     <div class="scene mb-2">
-      <h1 class="title">Where is My Cake!!<br/><span class="question">Did you see it?</span></h1>
+      <h1 class="title">Where is My Cake??<br/><span class="question">Did you see it?</span></h1>
       <div class="person">
         <div class="message">Uh..I Didn't eat it..</div>
         <div class="hairs">
@@ -297,7 +295,11 @@
         </div>
       </div>
     </div>
+
+    <button class="glow-on-hover fixed-bottom m-auto mb-2" type="button">回到頂端</button>
   </div>
+
+ 
     
 </div>
     
@@ -313,16 +315,19 @@
 const top1 = document.getElementById("top1")
 const top2 = document.getElementById("top2")
 const top5 = document.getElementById("top5")
+
+const myCanvas = document.getElementById("myCanvas")
 const closeTop1 = () => {
-  console.log("closeTop1 starts")
 
   top1.style.display = "none"
   top2.style.display = "flex"
+  
 }
 
 const closeTop2 = () => {
   top2.style.display = "none"
   top5.style.display = "block"
+  
 }
 
 //skrollr
@@ -451,7 +456,7 @@ function draw() {
   ctx.fillStyle="black"  
   ctx.fill()
 }
-setInterval(draw, 30);
+setInterval(draw, 25);
 // draw()
 let mouse = {x:0, y:0}
 canvas.addEventListener("mousemove", function (e) {
