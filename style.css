@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-.block1, .block2 {
+.block1,
+.block2 {
   width: 200px;
   height: 201px;
   background-color: white;
@@ -10,7 +11,7 @@
   cursor: pointer;
 }
 
-.block1:active{
+.block1:active {
   background-color: black;
 }
 
@@ -28,11 +29,9 @@
 }
 
 .block1:hover .pic1_block2 {
-  background-color: #FFC12C;
+  background-color: #ffc12c;
   width: 200px;
 }
-
-
 
 .pic2_block1 {
   width: 50px;
@@ -40,30 +39,35 @@
   background-color: white;
 }
 
-.pic2_block2_1, .pic2_block3_1, .pic2_block4_1 {
+.pic2_block2_1,
+.pic2_block3_1,
+.pic2_block4_1 {
   width: 50px;
   height: 50px;
   background-color: white;
-/*   border: 1px solid #000; */
+  /*   border: 1px solid #000; */
   transition-duration: 1s;
 }
 
-.pic2_block2_2, .pic2_block3_2, .pic2_block4_2 {
+.pic2_block2_2,
+.pic2_block3_2,
+.pic2_block4_2 {
   width: 50px;
   height: 50px;
   background-color: white;
-/*   border: 1px solid black; */
+  /*   border: 1px solid black; */
   transition-duration: 1s;
 }
 
 .block2:hover .pic2_block2_1,
 .block2:hover .pic2_block2_2,
-.block2:hover .pic2_block3_2, .block2:hover .pic2_block4_2{
-  background-color: #FFC12C;
+.block2:hover .pic2_block3_2,
+.block2:hover .pic2_block4_2 {
+  background-color: #ffc12c;
 }
 
-.pic2_block4_1{
-  border-bottom: 1px solid black
+.pic2_block4_1 {
+  border-bottom: 1px solid black;
 }
 
 /* cross */
@@ -76,12 +80,12 @@
   right: 0;
   position: fixed;
   transition-duration: 0.5s;
-  background-color: #FCDF1E;
+  background-color: #fcdf1e;
   cursor: pointer;
 }
 
 .cross:hover {
-  background-color: #FC5D1E;
+  background-color: #fc5d1e;
 }
 
 .cross:hover .line1,
@@ -216,15 +220,15 @@ svg {
 
 .magicScrollBall {
   position: fixed;
-  right: 5%;
-  top: 12%;
+  right: 6%;
+  top: 15%;
   transform: translate(-50%, -50%);
 }
 
 .box {
   width: 25px;
   height: 25px;
-  background-color: black;
+  /* background-color: black; */
 }
 
 /* canvas {
@@ -304,7 +308,7 @@ svg {
   border-radius: 40px;
   margin-top: -40px;
   padding-top: 50px;
-  background-color: #FFC12C;
+  background-color: #ffc12c;
   box-shadow: inset -10px -10px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -322,7 +326,7 @@ svg {
   width: 25px;
   height: 25px;
   border-radius: 12.5px;
-  background-color: #2F4A6E;
+  background-color: #2f4a6e;
 }
 
 .person .mouth {
@@ -331,14 +335,14 @@ svg {
   border-radius: 12.5px;
   margin-top: 15px;
   margin-left: 70px;
-  background-color: #F38A0C;
+  background-color: #f38a0c;
 }
 
 .person .mouth .food {
   width: 12px;
   height: 12px;
   border-radius: 6px;
-  background-color: #F38A0C;
+  background-color: #f38a0c;
   transform: translateX(-40px);
 }
 
@@ -375,12 +379,14 @@ svg {
 
 .scene:hover .person .body,
 .scene:focus .person .body {
-  box-shadow: inset -10px -10px 0px rgba(0, 0, 0, 0.1), 30px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -10px -10px 0px rgba(0, 0, 0, 0.1),
+    30px 10px rgba(0, 0, 0, 0.1);
 }
 
 .scene:hover .person:hover .body,
 .scene:focus .person:hover .body {
-  box-shadow: inset -10px -10px 0px rgba(0, 0, 0, 0.1), -30px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -10px -10px 0px rgba(0, 0, 0, 0.1),
+    -30px 10px rgba(0, 0, 0, 0.1);
 }
 
 .scene:hover .title,
@@ -390,7 +396,7 @@ svg {
 
 .scene:active .question {
   display: block;
-  color: #FFC12C;
+  color: #ffc12c;
 }
 
 .scene:active .person {
@@ -404,7 +410,7 @@ svg {
 
 .person:hover .body,
 .person:focus .body {
-  background-color: #F38A0C;
+  background-color: #f38a0c;
 }
 
 .person:hover .hairs .hair3,
@@ -717,7 +723,6 @@ svg {
   position: absolute;
   -webkit-animation: ballani 2s infinite alternate;
   animation: ballani 2s infinite alternate;
-  
 }
 
 @-webkit-keyframes ballani {
@@ -1207,13 +1212,13 @@ footer.jumbotron hr {
   cursor: pointer;
 }
 
-.top1 h2{
+.top1 h2 {
   font-weight: bold;
   font-size: 24px;
   color: red;
 }
 
-.top1:hover h2{
+.top1:hover h2 {
   color: blue;
 }
 
@@ -1233,7 +1238,7 @@ footer.jumbotron hr {
   cursor: pointer;
 }
 
-.magicTop2{
+.magicTop2 {
   font-weight: bold;
   font-size: 58px;
   padding-top: 8%;
@@ -1243,7 +1248,7 @@ footer.jumbotron hr {
   display: none;
 }
 
-.magicTop2{
+.magicTop2 {
   opacity: 0; /* 初始设置为透明 */
   animation: fadeIn 2s infinite; /* 使用动画名称为fadeIn，持续时间2秒，动画结束后保持最终状态 */
 }
@@ -1265,11 +1270,11 @@ footer.jumbotron hr {
 @keyframes h2ColorOrangeToRed {
   from {
     opacity: 0;
-    color: orange
+    color: orange;
   }
   to {
     opacity: 1;
-    color: red
+    color: red;
   }
 }
 
@@ -1289,10 +1294,21 @@ footer.jumbotron hr {
 
 .glow-on-hover:before {
   content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -1300,12 +1316,12 @@ footer.jumbotron hr {
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
 .glow-on-hover:active {
-  color: #000
+  color: #000;
 }
 
 .glow-on-hover:active:after {
@@ -1329,7 +1345,13 @@ footer.jumbotron hr {
 }
 
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
