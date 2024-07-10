@@ -73,7 +73,7 @@
   width: 200px;
   height: 200px;
   bottom: 0;
-  right: 0;
+  right: 3%;
   position: fixed;
   transition-duration: 0.5s;
   background-color: #FCDF1E;
@@ -151,7 +151,7 @@ svg {
 
 #pic3 {
   stroke: black;
-  stroke-wideth: 1px;
+  stroke-width: 1px;
 }
 
 #pic3 polyline {
@@ -216,8 +216,8 @@ svg {
 
 .magicScrollBall {
   position: fixed;
-  right: 5%;
-  top: 12%;
+  right: 6%;
+  top: 20%;
   transform: translate(-50%, -50%);
 }
 
@@ -345,7 +345,7 @@ svg {
 .person .message {
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: #F38A0C;
   position: absolute;
   left: -200px;
   top: 50px;
@@ -1060,6 +1060,10 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
 
 nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
   color: #ff6e3a;
+}
+
+a:hover {
+  background-color: rgba(255, 225, 0, 0.593);
 }
 
 header.jumbotron {

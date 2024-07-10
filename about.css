@@ -3,10 +3,6 @@
   font-family: 微軟正黑體;
 }
 
-body {
-  height: 1000px;
-}
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold;
 }
@@ -28,10 +24,11 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
 
 header.jumbotron {
   text-align: center;
-  background-image: url(https://awiclass.monoame.com/img/web1_print/print.jpeg);
+  background-image: url(https://preview.520cc.com/agency/dp/dp_thumbs/2370557/340862762/staff_1024.jpg!w480_520cc);
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
+  background-position-y: 60%;
 }
 header.jumbotron .container {
   color: white;
@@ -113,10 +110,11 @@ section#section_future .feature {
 
 footer.jumbotron {
   text-align: center;
-  background-image: url(https://awiclass.monoame.com/img/web1_print/print.jpeg);
+  background-image: url(https://preview.520cc.com/agency/dp/dp_thumbs/2370557/340862762/staff_1024.jpg!w480_520cc);
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
+  background-position-y: 85%;
 }
 footer.jumbotron input {
   background-color: transparent;
@@ -132,4 +130,9 @@ footer.jumbotron .container {
 footer.jumbotron hr {
   max-width: 50px;
   border: solid 2px #ff6e3a;
+}
+
+body{
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
