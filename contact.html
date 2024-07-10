@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯繫我們</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">研究中心</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end pe-5" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./intro.html">產品介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">聯絡我們</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="tosay">
+            <div class="bigok">你好~</div><br>有想要對我們提什麼建議嗎
+        </div>
+        <div class="sendok"> <span class="bigok">GREAT!</span><br><br>意見已經順利送達囉~</div>
+        <div class="linemail">
+            <div class="lineinner"></div>
+        </div>
+        <div class="headbar"></div>
+        <div class="mail">
+            <h2 class="totext">親愛的研究中心:</h2>
+            <h4 class="mainfield">我的名字是
+                <input class="inline lineinput" placeholder="XXX" />
+            </h4>
+            <h4 class="mainfield">可以用手機
+                <input class="inline lineinput" placeholder="0912-345-678" />&nbsp;聯絡到我
+            </h4>
+            <h4 class="mainfield">或是我的email
+                <input class="inline lineinput" placeholder="emailxxxx@gmail.com" />
+                <div class="sendmail">送出意見</div>
+            </h4>
+            <textarea class="maininput" placeholder="我想說xxxxx"></textarea>
+        </div>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+    var count = $(".maininput").val().split("\n").length;
+    $(".mail").css("height", (200 + 30 * count) + "px");
+
+
+    $(".maininput").keyup(function () {
+        var count = $(".maininput").val().split("\n").length;
+        $(".mail").css("height", (200 + 25 * count) + "px");
+
+    });
+
+    $(".sendmail").click(function () {
+        $(".tosay").css("opacity", "0");
+        $(".mail").css("overflow", "hidden");
+        $(".mail").css("height", "10px");
+        $(".mail").css("bottom", "150px");
+        $(".mail").css("width", "50px");
+        $(".mail").css("left", "30%");
+        $(".linemail").css("opacity", "1");
+        $(".mail").css("transition-duration", "0.9s");
+        $(".mail").css("transition-delay", "0.3s"); $(".mail").css("transform", "rotateZ(360deg)"); $(".linemail").css("transform", "rotateZ(360deg)");
+        setTimeout(function () {
+            $(".mail").css("opacity", "0");
+        }
+            , 500);
+
+        setTimeout(function () { $(".lineinner").css("top", "-80px"); }
+            , 1000);
+        setTimeout(function () { $(".linemail").css("left", "45%"); }
+            , 800);
+        setTimeout(function () {
+            $(".linemail").css("bottom", "20%");
+            $("body").css("background-color", "#c64029");
+        }
+            , 500);
+        setTimeout(function () {
+            $(".linemail").css("bottom", "110%");
+            $(".linemail").css("scale", "200%");
+            $(".sendok").css("opacity", "1"); $(".sendok").css("letter-spacing", "5px");
+
+        }
+            , 1500);
+
+
+
+    });
+</script>
+
+</html>
