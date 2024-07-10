@@ -330,6 +330,22 @@ const closeTop2 = () => {
   
 }
 
+//block1、block2
+const block2 = document.querySelector('.block2');
+    const pic1_block1 = document.querySelector('.pic1_block1');
+const pic1_block2 = document.querySelector('.pic1_block2');
+
+    block2.addEventListener('mouseover', () => {
+      pic1_block1.classList.add('hover1');
+       pic1_block2.classList.add('hover2');
+    });
+
+    block2.addEventListener('mouseout', () => {
+      pic1_block1.classList.remove('hover1');
+       pic1_block2.classList.remove('hover2');
+    });
+
+
 //skrollr
 
 
@@ -463,6 +479,7 @@ canvas.addEventListener("mousemove", function (e) {
   mouse.x = e.offsetX;
   mouse.y = e.offsetY;
 });
+
 
 </script>
 </html>
