@@ -462,7 +462,7 @@ svg {
   left: 20%;
   -webkit-animation: ani1 2s infinite;
   animation: ani1 2s infinite;
-  animaiton-timing-function: ease-in;
+  /* animaiton-timing-function: ease-in; */
 }
 
 .boxFive2 {
@@ -485,6 +485,7 @@ svg {
 
 .boxFive5 {
   left: 80%;
+  /* 兼容舊版 */
   -webkit-animation: ani5 2s infinite;
   animation: ani5 2s infinite;
 }
@@ -757,7 +758,6 @@ svg {
 }
 
 .container1 .ball {
-  -webkit-animation-delay: -0.1s;
   animation-delay: -0.1s;
 }
 
@@ -766,7 +766,6 @@ svg {
 }
 
 .container2 .ball {
-  -webkit-animation-delay: -0.2s;
   animation-delay: -0.2s;
 }
 
@@ -1248,8 +1247,8 @@ footer.jumbotron hr {
 }
 
 .magicTop2{
-  opacity: 0; /* 初始设置为透明 */
-  animation: fadeIn 2s infinite; /* 使用动画名称为fadeIn，持续时间2秒，动画结束后保持最终状态 */
+  opacity: 0;
+  animation: fadeIn 2s infinite; 
 }
 
 .topH2 {
@@ -1259,10 +1258,10 @@ footer.jumbotron hr {
 
 @keyframes fadeIn {
   from {
-    opacity: 0; /* 动画开始时完全透明 */
+    opacity: 0;
   }
   to {
-    opacity: 1; /* 动画结束时完全不透明 */
+    opacity: 1;
   }
 }
 

@@ -173,3 +173,7 @@ h4.mainfield {
   font-size: 60px;
   letter-spacing: 2px;
 }
+
+.navbar{
+  background: gray;
+}
